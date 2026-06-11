@@ -1,0 +1,1 @@
+const pokeSearch = document.getElementById("searchInput");
