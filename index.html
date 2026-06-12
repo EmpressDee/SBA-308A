@@ -1,28 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>poke database</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="mainscript.js" defer></script>
+    <!--changing to make import/export work...i think -->
+  </head>
+  <body>
+    <header id="navbar">
+        <h1 id="title">Pokemon Database</h1>
+    </header>
     
-     <script type="module" src="mainscript.js" defer></script>  <!--changing to make import/export work...i think -->
-</head>
-<body>
-     <h1 id="title">Pokemon Database</h1>
 
-
-
-
-    <input type="text" id="searchInput" placeholder="Search for a Pokemon">
+    <input type="text" id="searchInput" placeholder="Search for a Pokemon" />
     <button id="searchBtn">Search</button>
 
-    <div id="pokemonResults"></div>  <!--container to store pokemon search results -->
-    
-<!-- need to make a card layout structure to display pokemon -->
- <div id="pokemonGallery"></div>
+    <div id="pokemonResults"></div>
+    <!--container to store pokemon search results -->
 
-
-</body>
+    <!-- need to make a card layout structure to display pokemon -->
+    <div id="pokemonGallery"></div>
+  </body>
 </html>
