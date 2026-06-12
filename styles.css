@@ -32,3 +32,10 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#pokemonGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
