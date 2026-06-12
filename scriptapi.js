@@ -15,6 +15,7 @@ export const fetchPokemon = async (nameorId) => {
 };
 
 //gets full pokemon list
+//need to change this to get random pokemon generated and displayed, maybe try DOMContentLoaded 
  export const PokemonList = async () => {
   try {
     const res = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=151");

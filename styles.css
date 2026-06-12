@@ -8,8 +8,9 @@ body {
 
 #navbar {
     background-color: #CC0000;  /* official pokemon red */
-    padding: 16px;
+    padding: 16px 16px 16px 100px;
     color: #f5f5f5;
+    font-size: 24px;
 }
 
 #searchInput {
@@ -35,7 +36,33 @@ body {
 
 #pokemonGallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    /* this prevents it all from being squished in one line*/
     justify-content: center;
     gap: 16px;
+    padding: 16px;
+}
+
+#pokemonGallery > div {  /*targets the children (each individual card) */
+ background-color: white;
+ padding: 16px;
+ border-radius: 8px;
+ width: 150px;
+ text-align: center;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#pokemonGallery > div:hover {
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+#pokemonGallery > div h3 {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 8px;
+}
+
+#pokemonGallery > div img {
+    width: 100px;
+    height: 100px;
 }
