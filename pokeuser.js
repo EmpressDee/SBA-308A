@@ -9,7 +9,7 @@ export const displayPokemon = (pokemon) => {
   //image.src = `${pokemon.sprites.front_default}`;
   pokemonData.appendChild(image);
 };
-
+//cant find strength/weakness on api
 export const displayGallery = (pokemon) => {
   const gallery = document.getElementById("pokemonGallery");
 
