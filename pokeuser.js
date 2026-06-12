@@ -1,9 +1,12 @@
 export const displayPokemon = (pokemon) => {
   const pokemonData = document.getElementById("pokemonResults");
 
-  pokemonData.innerHTML = `<h2>${pokemon.name}</h2> <p>Type: ${pokemon.types[0].type.name}</p>`;
+  pokemonData.innerHTML = `<img src="${pokemon.sprites.front_default}"> <h2>${pokemon.name}</h2> 
+  <p>Type: ${pokemon.types[0].type.name}</p>
+  <p>Abilities: ${pokemon.abilities[0].ability.name}
+  <p>Weight: ${pokemon.weight}`;
   const image = document.createElement("img");
-  image.src = `${pokemon.sprites.front_default}`;
+  //image.src = `${pokemon.sprites.front_default}`;
   pokemonData.appendChild(image);
 };
 
