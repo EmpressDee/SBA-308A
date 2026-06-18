@@ -1,10 +1,13 @@
 import { fetchPokemon, PokemonList } from "./scriptapi.js";
 import { displayPokemon } from "./pokeuser.js"
+import { displayGallery } from "./pokeuser.js";
 
 
 document.addEventListener("DOMContentLoaded",async (e) => {
     const pokemonList = await PokemonList();
     const allPokemon = await Promise.all(pokemonList.map(p => fetchPokemon(p.name))); //map creates array of all pokemon;promise.all fires all requests at once
+
+    displayGallery(allPokemon);
 });
 
 
